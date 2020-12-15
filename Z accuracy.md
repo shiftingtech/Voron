@@ -9,7 +9,7 @@ There are a handful of horizontal lines running all the way through the part, as
 Now, the most obvious explination for the characteristic lines is a mechanical issue that's exagerated by the extra hopping.  Still, I wanted to test if that's all that's going on.  Note: all photos were taken at whatever angle of light started to show the first surface abberations.  I wanted to make sure that the layer errors weren't simply being hidden by lighting angle in some photos
 
 It seemed to me that if I reduce my microstepping, any small math errors would likely get lost, but any actual mechanical issues would remain largly unchanged.
-I printed an object with Z hop, but with my microstepping reduced to 2 (step_distance=0.02)  
+I printed an object with Z hop, but with my microstepping reduced to 2 (step_distance=0.02).  Full steps would have been great, but a step_distance of 0.04 would have meant my 0.2 layers didn't divide nicely by the step_distance.  That seemed like an unnecessary complication.
 
 ### x2 microstepping, with 0.2 z-hop
 ![x2 Microstepping, with 0.2 Z-hop](https://raw.githubusercontent.com/shiftingtech/Voron/main/Images/x2_nointerpolate_hop.jpg)
@@ -20,6 +20,5 @@ Of course, it is always possible that the motors were somehow fundamentally perf
 ### x4 microstepping, interpolation on, with 0.2 z-hop
 ![x4 microstepping, interpolation, with 0.2z-hop](https://raw.githubusercontent.com/shiftingtech/Voron/main/Images/x4_interpolate_hop.jpg)
 
-I tentatively feel that this bears out my theory: when klipper uses a coarser stepping for Z, but the 2209's interpolation is applied, I still get noticably more consistent Z layers, than with the stock voron config, suggesting there is some type of slight error in klipper's Z calculations, which is exagerated by the use of Z hopping.
-
+So, first of all, I'm liking this oddball configuration on Z:  x4 microstepping, interpolation on. But it also seems to bear out my theory:  when we're running very small step_distances, there may be some sort of math error as a result.
 
