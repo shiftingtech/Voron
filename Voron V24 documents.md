@@ -13,3 +13,4 @@ Bill of Materials (BOM) | The BOM is your personal, customized shopping list, ge
 [Print it Forward](https://pif.voron.dev/) | Don't have faith in your current printer's ability to print ABS for your Voron build?  No problem!  the PIF program will help you get high quality parts from a rigorously  vetted group of community members.
 [Voron2 Github](https://github.com/VoronDesign/Voron-2) | All key Voron2 files may be found here, including a Fusion 360 assembly for the entire printer, and all the STLs
 [Voron Users Github](https://github.com/VoronDesign/VoronUsers) | Voron Users is a collection of Mods and other resources for all Voron printers, drawn from the Voron community at large.
+[Voron Community Documentation](https://github.com/bdbell/VoronDocs) | This is not the official documentation, this is "everything else".  Still, there is a lot of good material here, on a wider variety of topics than is covered in the official documentation
